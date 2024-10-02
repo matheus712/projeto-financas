@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Controle Financeiro Pessoal</h1>
+        
+        <!-- Formulário para adicionar salário -->
+        <div class="form-container">
+            <h2>Adicionar Salário</h2>
+            <input type="number" id="salario" placeholder="Salário (R$)">
+            <button id="adicionar-salario">Adicionar Salário</button>
+        </div>
+
+        <!-- Exibir saldo -->
+        <div class="saldo">
+            <h2>Saldo Atual: R$ <span id="saldo">0.00</span></h2>
+        </div>
+
+        <!-- Formulário para adicionar despesas -->
+        <div class="form-container">
+            <h2>Adicionar Despesa</h2>
+            <input type="text" id="descricao" placeholder="Descrição">
+            <input type="number" id="valor" placeholder="Valor da Despesa (R$)">
+            <button id="adicionar-despesa">Adicionar Despesa</button>
+        </div>
+
+        <!-- Histórico de despesas -->
+        <div class="historico">
+            <h3>Histórico de Despesas</h3>
+            <ul id="lista-despesas"></ul>
+        </div>
+
+        <!-- Tabela com Total Gasto e Saldo Restante -->
+        <div class="resultado">
+            <table>
+                <tr>
+                    <th>Total Gasto</th>
+                    <th>Saldo Restante</th>
+                </tr>
+                <tr>
+                    <td>R$ <span id="total-gasto">0.00</span></td>
+                    <td>R$ <span id="saldo-restante">0.00</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
